@@ -1,0 +1,298 @@
+*{
+    margin: 0; 
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-image: url(./Vin/grapes-g9a5eb93e4_1920.jpg);
+}
+
+form {
+   
+    border: 5px solid #91c1f2;
+    background-image:url(./Vin/FondB.png) ;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 40em;
+    border-radius: 20px 20px 20px 20px 
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Entrez {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #3461b4;
+    background-color: #fff;
+    color: rgb(28, 26, 26);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.Valider {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Valider:hover {
+    background-color: #270c0c;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    color: rgb(52, 52, 68);
+}
+
+th {
+    background-color:#6b6ecd;
+    color:rgb(255, 255, 255);
+    border-radius: 1.5px;
+}
+
+tr:hover {
+    background-color: rgb(151, 95, 188);
+    
+}
+tr{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+.navbar {
+    z-index: 1000;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 25px;
+    color: red;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+    font-size: 2px;
+}
+
+.emit{
+    width: 130px;
+    padding-left: 5px;
+}
+
+#recherche {
+    border: 1px solid #a7d7f1;
+    background-color: #ffffff;
+    color: rgba(67, 55, 55, 0.367);
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.Boutons {
+    background-color: #074eb8;
+    color: #fff;
+    border: 1px white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Boutons:hover {
+    background-color: white;
+    color: black;
+}
+
+
+section{
+    padding-top: 70px;
+    display: none;
+}
+
+section.show{
+    display: block;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu{
+    width: 100%;
+    float: left;
+}
+#texte{
+    padding-top: 300px;
+    text-align: center;
+    
+}
+
+.contenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    margin-top: 25px;
+    position: fixed;
+    z-index: 999;
+    background-color: transparent;
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(240, 45, 11, 0.926);
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: rgba(11, 111, 174, 0.97);
+}
+
+h3{
+    padding-left: 70px;
+    font: 100px;
+}
+h3{
+    color: red;
+}
+h3 span{
+    color: rgb(0, 0, 0);
+}
+
+
+
+#regionC{
+    display: flex;
+}
+
+#regionLi{
+    padding-left: 50px;
+}
+
+a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+li {
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    color: white;
+}
+
+.bas{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer#propos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  footer#propos  p{
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 5px;
+  }
+  footer#propos {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+text-align: center;
+z-index: 999;
+  }
+  
+  footer#propos p {
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 5px;
+  }
+  .nom p i{
+      color: rgb(0, 0, 0);
+      font-style: normal;
+      font-weight: bold;
+  }
+  #caracteristique h2{
+      color: rgb(0, 0, 0);
+      background-color: rgba(94, 255, 0, 0.727);
+      font-size: 15px;
+      border-radius: 4px;
+      font-weight: lighter;
+      height: 25px;
+      font-family: monospace;
+  }
+  #caracteristique {
+      margin-bottom: 20px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 2px;
+    border: none;
+    padding: 20px;
+  }
+  
+  #caracteristique label {
+    font-weight: bold;
+  }
+  
+  #caracteristique label, #caracteristique input, #caracteristique select {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #caracteristique input[type="text"],
+  #caracteristique input[type="number"],
+  #caracteristique select {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    width: 100%;
+    padding: 5px;
+    border-radius:5px;
+  }
+
+  #caracteristique input[type="text"]:hover,
+  #caracteristique input[type="number"]:hover,
+  #caracteristique select:hover {
+    border: 1px solid rgb(5, 147, 255);
+  }
+  
+  #caracteristique input[type="text"]:focus,
+  #caracteristique input[type="number"]:focus,
+  #caracteristique select:focus {
+    outline: none;
+  }
+  
+  #caracteristique input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #caracteristique input[type="submit"]:hover {
+    background-color: #a04545;
+  }
+  
