@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Style.css">
+        <title>TKF 1.0</title>
+
+    </head>
+
+    <body>
+        <header class="navbar">
+            <h3>T<span>KF</span></h3>
+        </header>
+        <div class="contenu">
+            <nav>
+                <h2> </h2>
+                <ul>
+                    <li><a href="#texte" onclick="menu()">MENU</a></li>
+                    <li><a href="#centre" onclick="caract()">Caracteristique</a></li>
+                    <li><a href="#liste" onclick="liste()">liste</a></li>
+                    <li><a href="#region" onclick="region()" >Region</a></li>
+                    <li><a href="#stat">Statistique</a></li>
+                </ul>
+            </nav>
+            
+            <section  id="texte" class="show"><H1> </H1>
+                <h1></h1>
+            </section>
+            <section id="centre">
+                
+                <form id="caracteristique">
+                    <h2>Ajout du Vin Dans Stock</h2>
+                    <label for="nom">Nom:</label>
+                    <input type="text" class="Entrez" name="nom" id="nom">
+                    <label for="Type Vin">Type vin: </label>
+                    <!--<input type="text" class="Entrez" name="vin" id="type">-->
+                    <select class="Entrez" id="type">
+                        <option>Rouge</option>
+                        <option>Blanc</option>
+                        <option>rose</option>
+                    </select>
+                    <label for="provenance">Provenance: </label>
+                    <!--<input type="text" class="Entrez" name="provenance" id="provenance">-->
+                    <select class="Entrez" id="provenance">
+                        <option>Fianarantsoa</option>
+                        <option>Antananarivo</option>
+                        <option>Paris</option>
+                        <option>London</option>
+                    </select>
+                    <label for="Niveau">Niveau d'alcool: </label>
+                    <input type="number" class="Entrez" name="niveau" min="8.5" max="15" id="niveau">
+                    <label for="nombre">Nombre</label>
+                    <input type="number" class="Entrez" name="nombre" id="nombre" min="0">
+                    <label for="prix">Prix: </label>
+                    <input type="number" class="Entrez" name="prix" id="prix" min="15000" max="40000"  ><i class="fa fa-address-book-o" aria-hidden="true"></i>
+                    <br><br>
+                    <input type="button" class="Valider" value="Valider" onclick="ajouterVin()">
+        
+                </form>
+            </section>
+
+            <section id="liste">
+                
+                <h2><mark>Listes Stock des Vin enregistres</mark></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Type Vin</th>
+                            <th>Provenance</th>
+                            <th>Niveau d'Alcool</th>
+                            <th>Nombre</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listeVin">
+        
+                    </tbody>
+        
+                </table>
+            </section>
+
+            <section id="region" >
+                <h3 for="region" id="regionL">Choisissez la region de la Point de vente: <select name="region" id="region">
+                    <option>Fianarantsoa</option>
+                    <option>Antananarivo</option>
+                </select> </h3>
+                <div id="regionC">
+                    <form id="caracteristique">
+                        <h2>Ajout du Vin Dans le Point de Vente</h2>
+                        <label for="nom">Nom:</label>
+                        <input type="text" class="Entrez" name="nom" id="nom">
+                        <label for="Type Vin">Type vin: </label>
+                        <!--<input type="text" class="Entrez" name="vin" id="type">-->
+                        <select class="Entrez" id="type">
+                            <option>Rouge</option>
+                            <option>Blanc</option>
+                            <option>rose</option>
+                        </select>
+                        <label for="provenance">Provenance: </label>
+                        <!--<input type="text" class="Entrez" name="provenance" id="provenance">-->
+                        <select class="Entrez" id="provenance">
+                            <option>Fianarantsoa</option>
+                            <option>Antananarivo</option>
+                            <option>Paris</option>
+                            <option>London</option>
+                        </select>
+                        <label for="Niveau">Niveau d'alcool: </label>
+                        <input type="number" class="Entrez" name="niveau" min="8.5" max="15" id="niveau">
+                        <label for="nombre">Nombre</label>
+                        <input type="number" class="Entrez" name="nombre" id="nombre" min="0">
+                        <label for="prix">Prix: </label>
+                        <input type="number" class="Entrez" name="prix" id="prix" min="15000" max="40000">
+                        <label for="nbVente">Nombre de Vente</label>
+                        <input type="number" class="Entrez" name="NbVente" id="nbVente" placeholder="Nombre de Vente" min="0">
+                        <br><br>
+                        <input type="button" class="Valider" value="Valider" onclick="ajouterVin()">
+                            
+                        
+                        
+                    </form>
+
+                    <div id="regionLi">
+                        <h2>Listes Stock des Vin enregistres Dans le Point de Vente</h2>
+                        <input type="text" id="recherche" placeholder="Recherche" />
+                        <input type="button" class="Boutons" value="Rechercher" onclick="rechercherVin()">
+        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Type Vin</th>
+                                    <th>Provenance</th>
+                                    <th>Niveau d'Alcool</th>
+                                    <th>Nombre</th>
+                                    <th>Prix</th>
+                                </tr>
+                            </thead>
+                        <tbody id="listeVin">
+            
+                        </tbody>
+            
+                    </table>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+        <script src="./anime.min.js"></script>
+        <script src="js.js"></script>
+    </body>
+
+</html>
